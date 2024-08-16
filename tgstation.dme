@@ -6223,6 +6223,7 @@
 #include "modular_skyraptor\modules\betterplanets\code\prairie_areas.dm"
 #include "modular_skyraptor\modules\betterplanets\code\prairie_datums.dm"
 #include "modular_skyraptor\modules\betterplanets\code\prairie_mapping.dm"
+#include "modular_skyraptor\modules\betterplanets\code\prairie_objects.dm"
 #include "modular_skyraptor\modules\betterplanets\code\prairie_ruins.dm"
 #include "modular_skyraptor\modules\betterplanets\code\prairie_turfs.dm"
 #include "modular_skyraptor\modules\betterplanets\code\retrofit_datums.dm"

@@ -14,13 +14,24 @@
 	},
 	"traits": [
 		{
+			"Up": true,
+			"Mining": true,
+			"Linkage": null,
+			"Gravity": true,
+			"Weather_PlasmaStorm": false,
+			"No Parallax": true,
+			"Prairie Ruins": true,
+			"Baseturf": "/turf/open/misc/sandy_dirt/prairie"
+		},
+		{
+			"Down": true,
 			"Mining": true,
 			"Linkage": null,
 			"Gravity": true,
 			"Weather_PlasmaStorm": true,
 			"No Parallax": true,
 			"Prairie Ruins": true,
-			"Baseturf": "/turf/open/misc/sandy_dirt/prairie"
+			"Baseturf": "/turf/open/openspace/prairie/keep_below"
 		}
 	],
 	"minetype": "none",

@@ -1,7 +1,7 @@
 /// Dirt
 /turf/open/misc/sandy_dirt/prairie
 	name = "prairie dirt"
-	desc = "Dry, cracked dirt that crunches beneath your feet."
+	desc = "Dry, cracked dirt that crackles beneath your feet."
 	initial_gas_mix = PRAIRIE_GASMIX
 	planetary_atmos = TRUE
 	baseturfs = /turf/open/misc/sandy_dirt/prairie //stops prairie dirt from getting any more fucked up
@@ -20,6 +20,21 @@
 	planetary_atmos = TRUE
 
 /turf/open/floor/plating/prairie_world/planetary/Initialize(mapload)
+	. = ..()
+	set_light(2, 0.6, LIGHT_COLOR_PRAIRIEWORLD)
+
+/// Plating
+/turf/open/floor/iron/dark/small/road
+	name = "road"
+	desc = "Well-laid tiles that ease your weary feet on this hellhole of a gravitational well.  You're pretty sure these are irreplacable, as of now."
+	planetary_atmos = TRUE
+	slowdown = -0.25
+
+/turf/open/floor/iron/dark/small/road/prairie
+	initial_gas_mix = PRAIRIE_GASMIX
+	baseturfs = /turf/open/floor/plating/prairie_world
+
+/turf/open/floor/iron/dark/small/road/prairie/Initialize(mapload)
 	. = ..()
 	set_light(2, 0.6, LIGHT_COLOR_PRAIRIEWORLD)
 

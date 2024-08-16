@@ -70,6 +70,9 @@
 
 	///If we should init and immediately start processing
 	var/init_processing = FALSE
+	
+	/// SKYRAPTOR ADDITION: Mapping helper, allows for mappers to map like we still had dumb pipes
+	var/initialize_directions_mapping = 0
 
 	armor_type = /datum/armor/machinery_atmospherics
 
@@ -101,7 +104,10 @@
 	nodes = new(device_type)
 	init_processing = process
 	..()
-	set_init_directions(init_dir)
+	if(initialize_directions_mapping != 0) /// SKYRAPTOR ADDITION
+		set_init_directions(initialize_directions_mapping)
+	else
+		set_init_directions(init_dir) /// SKYRAPTOR ADDITION END
 
 /obj/machinery/atmospherics/Initialize(mapload)
 	if(mapload && name != initial(name))
