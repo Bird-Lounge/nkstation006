@@ -221,3 +221,14 @@
 
 /datum/emote/living/purr/raptor/get_sound(mob/living/user)
 	return pick('modular_skyraptor/modules/newemotes/sounds/voice/raptor_purr.ogg')
+
+/datum/emote/living/quill
+	key = "quill"
+	key_third_person = "quills"
+	message = "rustles their quills."
+	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
+	audio_cooldown = 3 SECONDS
+	vary = TRUE
+
+/datum/emote/living/hiss/get_sound(mob/living/user)
+	return pick('modular_skyraptor/modules/species_vox/sounds/voxrustle.ogg')

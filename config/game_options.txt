@@ -397,6 +397,7 @@ ROUNDSTART_RACES akula
 ROUNDSTART_RACES talonmoth
 ROUNDSTART_RACES teshvali
 ROUNDSTART_RACES avalari
+ROUNDSTART_RACES vox
 
 ##-------------------------------------------------------------------------------------------
 
